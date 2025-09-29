@@ -4,7 +4,7 @@
         "CSZTBN012",
         "v71.4"
     ],
-    "name": "presetRussia",
+    "name": "$LOADSTRING(presetRussia)",
     "jparams": {},
     "variables": [],
     "commaVars": {

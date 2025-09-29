@@ -4,7 +4,7 @@
         "CSZTBN012",
         "v71.4"
     ],
-    "name": "amazonGames",
+    "name": "$LOADSTRING(amazonGames)",
     "jparams": {},
     "variables": [],
     "commaVars": {
