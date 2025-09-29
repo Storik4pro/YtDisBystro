@@ -1,0 +1,7 @@
+{
+    "toggleListAvailable":[],
+    "localized_strings_directory":{
+        "RU":"loc/RU/strings.json",
+        "EN":"loc/EN/strings.json"
+    }
+}

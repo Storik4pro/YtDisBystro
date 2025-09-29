@@ -1,0 +1,54 @@
+{
+    "meta": "UC:v1.0",
+    "target": [
+        "CSZTBN012",
+        "v71.4"
+    ],
+    "name": "amazonGames",
+    "jparams": {},
+    "variables": [],
+    "commaVars": {
+        "YTDB_Amazon_TCP": "443,444-65535",
+        "YTDB_Amazon_UDP": "443,444-65535",
+        "YTDB_UDP_Repeats": "2",
+        "YTDB_Cutoff_Limit": "4",
+        "YTDB_TTL_Limit": "7",
+        "YTDB_YTQC": "--dpi-desync=fake,ipfrag2 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_7.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=3",
+        "YTDB_WinSZ": "43 --hostlist-domains=googlevideo.com --hostlist=\u0022$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt\u0022 --dpi-desync=multisplit --dpi-desync-split-seqovl=1 --dpi-desync-split-pos=sld\u002B1",
+        "YTDB_prog_log": "$EMPTY"
+    },
+    "availableCommaVarsValues": [
+        {
+            "Comment": "toggleYouTubeQUIC",
+            "VarName": "YTDB_YTQC",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=4 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_4.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=2",
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=8 --dpi-desync-udplen-pattern=0xFEA82025 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_4.bin\u0022 --dpi-desync-cutoff=n4 --dpi-desync-repeats=2",
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=25 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_5.bin\u0022 --dpi-desync-repeats=2 --dpi-desync-cutoff=n3",
+                "--dpi-desync=fake --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_1.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=6"
+            ]
+        },
+        {
+            "Comment": "toggleYouTubeNoQUIC",
+            "VarName": "YTDB_WinSZ",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt --dpi-desync=fake,multisplit --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-tls=0x0F0F0E0F --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_14.bin\u0022 --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt --ipcache-hostname --dpi-desync=syndata,fake,multisplit --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-syndata=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_7.bin --dpi-desync-fake-tls=0x0F0F0E0F --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_9.bin\u0022 --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt --dpi-desync=fake,multidisorder --dpi-desync-split-pos=7,sld\u002B1 --dpi-desync-fake-tls=0x0F0F0F0F --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_4.bin\u0022 --dpi-desync-fake-tls-mod=rnd,dupsid,sni=fonts.google.com --dpi-desync-fooling=badseq --dpi-desync-autottl",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt --ipcache-hostname --dpi-desync=syndata,multisplit --dpi-desync-split-seqovl=1 --dpi-desync-split-pos=1,sld\u002B1,endsld-2 --dpi-desync-fake-syndata=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\syn_packet.bin\u0022 --dup=2 --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=\u0022$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtube.txt\u0022 [<place your strategy here>]"
+            ]
+        },
+        {
+            "Comment": "toggleDebugLog",
+            "VarName": "YTDB_prog_log",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "--debug=@%~dp0log_debug.txt"
+            ]
+        }
+    ],
+    "startup_string": "%YTDB_prog_log%--wf-tcp=80,%YTDB_Amazon_TCP% --wf-udp=%YTDB_Amazon_UDP%  --filter-tcp=80,443 --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\netrogat.txt --new  --filter-udp=443 --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-youtubeQ.txt %YTDB_YTQC% --new  --filter-tcp=4%YTDB_WinSZ% --new  --filter-tcp=443 --hostlist-domains=ntc.party --hostlist=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\russia-discord.txt --dpi-desync=multisplit --dpi-desync-split-seqovl=286 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_11.bin --dup=2 --dup-cutoff=n3 --new  --filter-tcp=80 --hostlist-domains=cloudfront.net,amazon.com,amazonaws.com,awsstatic.com,epicgames.com --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=2 --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-http=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\http_fake_MS.bin --dpi-desync-fooling=md5sig --dup=2 --dup-fooling=md5sig --dup-cutoff=n3 --new  --filter-tcp=80 --ipset=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=2 --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-http=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\http_fake_MS.bin --dpi-desync-fooling=md5sig --dup=2 --dup-fooling=md5sig --dup-cutoff=n3 --new  --filter-tcp=%YTDB_Amazon_TCP% --hostlist-domains=awsglobalaccelerator.com,cloudfront.net,amazon.com,amazonaws.com,awsstatic.com,epicgames.com --dpi-desync=multisplit --dpi-desync-split-seqovl=211 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_5.bin --new  --filter-tcp=%YTDB_Amazon_TCP% --ipset=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=multisplit --dpi-desync-split-seqovl=211 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\tls_clienthello_5.bin --new  --filter-udp=%YTDB_Amazon_UDP% --hostlist-domains=awsglobalaccelerator.com,cloudfront.net,amazon.com,amazonaws.com,awsstatic.com,epicgames.com --dpi-desync=fake --dpi-desync-any-protocol --dpi-desync-fake-unknown-udp=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_6.bin\u0022 --dpi-desync-repeats=%YTDB_UDP_Repeats% --dpi-desync-cutoff=n%YTDB_Cutoff_Limit% --dpi-desync-ttl=%YTDB_TTL_Limit% --new  --filter-udp=%YTDB_Amazon_UDP% --ipset=$GETCURRENTDIR()/List/1_preset_AmazonGames_converted_1759162957\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=fake --dpi-desync-any-protocol --dpi-desync-fake-unknown-udp=\u0022$GETCURRENTDIR()/Bin/1_preset_AmazonGames_converted_1759162957\\quic_6.bin\u0022 --dpi-desync-repeats=%YTDB_UDP_Repeats% --dpi-desync-cutoff=n%YTDB_Cutoff_Limit% --dpi-desync-ttl=%YTDB_TTL_Limit% --new  --filter-l3=ipv6 --filter-udp=50000-50090 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-autottl6 --dup=2 --dup-autottl6 --dup-cutoff=n3 --new  --filter-l3=ipv4 --filter-udp=50000-50090 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-autottl --dup=2 --dup-autottl --dup-cutoff=n3"
+}

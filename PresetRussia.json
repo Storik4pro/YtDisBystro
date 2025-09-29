@@ -1,0 +1,63 @@
+{
+    "meta": "UC:v1.0",
+    "target": [
+        "CSZTBN012",
+        "v71.4"
+    ],
+    "name": "presetRussia",
+    "jparams": {},
+    "variables": [],
+    "commaVars": {
+        "YTDB_YTQC": "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=8 --dpi-desync-udplen-pattern=0x0F0F0E0F --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_6.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=2",
+        "YTDB_WinSZ": "43 --hostlist-domains=googlevideo.com --hostlist=\u0022$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt\u0022 --dpi-desync=multisplit --dpi-desync-split-seqovl=1 --dpi-desync-split-pos=sld\u002B1",
+        "YTDB_CFUNBAN": "3 --ipset=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=multisplit --dpi-desync-split-seqovl=226 --dpi-desync-split-seqovl-pattern=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_18.bin\u0022 --dup=2 --dup-cutoff=n3",
+        "YTDB_CFUNBANv6": "3 --ipset=\u0022$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\cloudflare-ipset_v6.txt\u0022 --ipset-exclude-ip=2606:4700:4700::1111,2606:4700:4700::1001 --dpi-desync=multisplit --dpi-desync-split-seqovl=226 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_18.bin --dup=2 --dup-cutoff=n3",
+        "YTDB_prog_log": "$EMPTY",
+        "YTDB_RTMPS": "43 --ipset=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube-rtmps.txt --dpi-desync=syndata --dpi-desync-fake-syndata=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\syn_packet.bin\u0022 --dup=2 --dup-cutoff=n3"
+    },
+    "availableCommaVarsValues": [
+        {
+            "Comment": "toggleYouTubeQUIC",
+            "VarName": "YTDB_YTQC",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "--dpi-desync=fake,ipfrag2 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_5.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=3",
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=4 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_4.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=2",
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=8 --dpi-desync-udplen-pattern=0xFEA82025 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_4.bin\u0022 --dpi-desync-cutoff=n4 --dpi-desync-repeats=2",
+                "--dpi-desync=fake,udplen --dpi-desync-udplen-increment=25 --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_5.bin\u0022 --dpi-desync-repeats=2 --dpi-desync-cutoff=n3",
+                "--dpi-desync=fake --dpi-desync-fake-quic=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\quic_1.bin\u0022 --dpi-desync-cutoff=n3 --dpi-desync-repeats=6"
+            ]
+        },
+        {
+            "Comment": "toggleYouTubeNoQUIC",
+            "VarName": "YTDB_WinSZ",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt --dpi-desync=fake,multisplit --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-tls=0x0F0F0E0F --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_14.bin\u0022 --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt --ipcache-hostname --dpi-desync=syndata,fake,multisplit --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-syndata=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_7.bin\u0022 --dpi-desync-fake-tls=0x0F0F0E0F --dpi-desync-fake-tls=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_9.bin --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt --dpi-desync=fake,multidisorder --dpi-desync-split-pos=7,sld\u002B1 --dpi-desync-fake-tls=0x0F0F0F0F --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_4.bin\u0022 --dpi-desync-fake-tls-mod=rnd,dupsid,sni=fonts.google.com --dpi-desync-fooling=badseq --dpi-desync-autottl",
+                "43 --hostlist-domains=googlevideo.com --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt --ipcache-hostname --dpi-desync=syndata,multisplit --dpi-desync-split-seqovl=1 --dpi-desync-split-pos=1,sld\u002B1,endsld-2 --dpi-desync-fake-syndata=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\syn_packet.bin\u0022 --dup=2 --dup-cutoff=n3",
+                "43 --hostlist-domains=googlevideo.com --hostlist=\u0022$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtube.txt\u0022 [<place your strategy here>]"
+            ]
+        },
+        {
+            "Comment": "discord",
+            "VarName": "YTDB_CFUNBAN",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "3 --ipset=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=multisplit --dpi-desync-split-seqovl=286 --dpi-desync-split-seqovl-pattern=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_11.bin\u0022 --dup=2 --dup-cutoff=n3",
+                "3 --ipset=\u0022$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\cloudflare-ipset.txt\u0022 --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=1 --dpi-desync-split-pos=1,midsld --dpi-desync-fake-tls=0x0F0F0E0F --dpi-desync-fake-tls=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_9.bin --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3",
+                "3 --ipset=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\cloudflare-ipset.txt --ipset-exclude-ip=1.1.1.1,1.0.0.1,212.109.195.93,83.220.169.155,141.105.71.21,18.244.96.0/19,18.244.128.0/19 --dpi-desync=syndata,multisplit --dpi-desync-split-seqovl=2 --dpi-desync-fake-syndata=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_16.bin\u0022 --dup=2 --dup-cutoff=n3"
+            ]
+        },
+        {
+            "Comment": "toggleDebugLog",
+            "VarName": "YTDB_prog_log",
+            "CurrentValueIndex": 0,
+            "Values": [
+                "--debug=@\u0022%~dp0log_debug.txt\u0022"
+            ]
+        }
+    ],
+    "startup_string": "%YTDB_prog_log% --wf-tcp=80,443 --wf-udp=443,50000-50090  --filter-l3=ipv6 --filter-tcp=80,443 --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\netrogat.txt --new  --filter-l3=ipv4 --filter-tcp=80,443 --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\netrogat.txt --new  --filter-tcp=4%YTDB_RTMPS% --new  --filter-udp=443 --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-youtubeQ.txt %YTDB_YTQC% --new  --filter-tcp=4%YTDB_WinSZ% --new  --filter-tcp=80 --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\mycdnlist.txt --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-blacklist.txt --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\myhostlist.txt --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=2 --dpi-desync-split-pos=sld\u002B1 --dpi-desync-fake-http=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\http_fake_MS.bin --dpi-desync-fooling=md5sig --dup=2 --dup-fooling=md5sig --dup-cutoff=n3 --new  --filter-tcp=443 --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\russia-blacklist.txt --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\myhostlist.txt --hostlist=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\mycdnlist.txt --dpi-desync=fake,multisplit --dpi-desync-split-pos=2,midsld --dpi-desync-fake-tls=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_17.bin --dpi-desync-fake-tls-mod=rnd,dupsid --dpi-desync-fooling=md5sig --dpi-desync-autottl --dup=2 --dup-fooling=md5sig --dup-autottl --dup-cutoff=n3 --new  --filter-tcp=443 --hostlist-domains=updates.discord.com,stable.dl2.discordapp.net,animego.online,animejoy.ru,rutracker.org,static.rutracker.cc,pixiv.net,cdn77.com --dpi-desync=multisplit --dpi-desync-split-seqovl=293 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_12.bin --new  --filter-tcp=443 --hostlist-domains=awsglobalaccelerator.com,cloudfront.net,amazon.com,amazonaws.com,awsstatic.com --dpi-desync=multisplit --dpi-desync-split-seqovl=211 --dpi-desync-split-seqovl-pattern=$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_5.bin --new  --filter-l3=ipv6 --filter-tcp=44%YTDB_CFUNBANv6% --new  --filter-l3=ipv4 --filter-tcp=44%YTDB_CFUNBAN% --new  --filter-l3=ipv6 --filter-udp=50000-50090 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-autottl6 --dup=2 --dup-autottl6 --dup-cutoff=n3 --new  --filter-l3=ipv4 --filter-udp=50000-50090 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-autottl --dup=2 --dup-autottl --dup-cutoff=n3 --new  --filter-l3=ipv4 --filter-tcp=80 --hostlist-auto=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\autohostlist.txt --hostlist-exclude=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\netrogat.txt --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=2 --dpi-desync-split-pos=host\u002B1 --dpi-desync-fake-http=0x0E0E0F0E --dpi-desync-fooling=md5sig --new  --filter-l3=ipv4 --filter-tcp=443 --hostlist-auto=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\autohostlist.txt --hostlist-exclude=$GETCURRENTDIR()/List/1_preset_russia_converted_1759166015\\netrogat.txt --dpi-desync=fake,fakedsplit --dpi-desync-split-pos=1 --dpi-desync-fake-tls=\u0022$GETCURRENTDIR()/Bin/1_preset_russia_converted_1759166015\\tls_clienthello_9.bin\u0022 --dpi-desync-fooling=badseq --dpi-desync-autottl"
+}
