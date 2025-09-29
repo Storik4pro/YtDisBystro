@@ -14,19 +14,19 @@
     },
     "availableCommaVarsValues": [
         {
-            "Comment": "warpIP",
+            "Comment": "Здесь нужно указать IP вашей конечной точки [endpoint] WARP для маскировки трафика",
             "VarName": "YTDB_WARP_IP",
             "CurrentValueIndex": 0,
             "Values": []
         },
         {
-            "Comment": "warpIPPort",
+            "Comment": "Здесь нужно указать порт вашей конечной точки [endpoint] WARP для маскировки трафика",
             "VarName": "YTDB_WARP_PORT",
             "CurrentValueIndex": 0,
             "Values": []
         },
         {
-            "Comment": "toggleDebugLog",
+            "Comment": "Здесь можно включить дебаг-лог ($EMPTY - выключено) \nНЕ ВКЛЮЧАТЬ без надобности - приводит к тормозам соединения или полному отключению обхода!",
             "VarName": "YTDB_prog_log",
             "CurrentValueIndex": 0,
             "Values": [

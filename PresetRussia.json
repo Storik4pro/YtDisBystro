@@ -17,7 +17,7 @@
     },
     "availableCommaVarsValues": [
         {
-            "Comment": "toggleYouTubeQUIC",
+            "Comment": "Здесь можно включить другую стратегию для Ютуба по протоколу QUIC [интерфейс и googlevideo.com]",
             "VarName": "YTDB_YTQC",
             "CurrentValueIndex": 0,
             "Values": [
@@ -29,7 +29,7 @@
             ]
         },
         {
-            "Comment": "toggleYouTubeNoQUIC",
+            "Comment": "Здесь можно включить другую стратегию для видео Ютуба без QUIC",
             "VarName": "YTDB_WinSZ",
             "CurrentValueIndex": 0,
             "Values": [
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "Comment": "discord",
+            "Comment": "Здесь можно включить другую стратегию для Дискорда и обхода блокировки хостеров",
             "VarName": "YTDB_CFUNBAN",
             "CurrentValueIndex": 0,
             "Values": [
@@ -51,7 +51,7 @@
             ]
         },
         {
-            "Comment": "toggleDebugLog",
+            "Comment": "Здесь можно включить дебаг-лог ($EMPTY - выключено) \nНЕ ВКЛЮЧАТЬ без надобности - приводит к тормозам соединения или полному отключению обхода!",
             "VarName": "YTDB_prog_log",
             "CurrentValueIndex": 0,
             "Values": [
