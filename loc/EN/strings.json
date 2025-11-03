@@ -1,4 +1,6 @@
 {
     "general": "Launch settings config",
-    "amazonGames": "Amazon Games"
+    "amazonGames": "Amazon Games",
+    "presetRussia" : "Classic for Russia",
+    "warp": "WARP (YtDisBystro)"
 }
